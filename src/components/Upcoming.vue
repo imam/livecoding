@@ -60,7 +60,7 @@
     </div>
 
     <div class="flex justify-center w-full">
-      <a href="#" @click.prevent="() => scrollToUpcomingCourse(key)" :class="['block w-[15.79px] h-[6px]  rounded-[4px] ml-[6.32px]', key == activeUpcomingCourse ? 'bg-[#EC5F5F]' : 'bg-[#EEEEEF]']" v-for="(course,key) in upcomingCourses" :key="key"></a>
+      <a href="#" @click.prevent="() => scrollToUpcomingCourse(key)" :class="[key == activeUpcomingCourse ? 'bg-[#EC5F5F]' : 'bg-[#EEEEEF]','block w-[15.79px] h-[6px]  rounded-[4px] ml-[6.32px]']" v-for="(course,key) in upcomingCourses" :key="key"></a>
     </div>
   </div>
 </template>
